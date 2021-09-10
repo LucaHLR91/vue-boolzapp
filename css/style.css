@@ -66,8 +66,14 @@
     margin: 0 5px;
 }
 
+.user_menu {
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+
 .user_menu i {
-    margin: 0 2px;
+    margin: 0 5px;
     color: #B1B1B1;
 }
 
