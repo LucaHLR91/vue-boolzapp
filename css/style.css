@@ -137,10 +137,19 @@
 .chat_list {
     width: 100%;
     height: 75%;
-    background: pink;
+    background: white;
+}
+
+.chat_list img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 5px;
 }
 
 .contact_name {
+    display: flex;
+    align-items: center;
     background-color: white;
     padding: 10px;
     border-bottom: 1px solid lightgray;
@@ -160,7 +169,12 @@
 .chat_main {
     width: 100%;
     height: 80%;
-    background-image: url(../img/mine.jpg)
+    background-image: url(../img/mine.jpg);
+}
+
+.user_message {
+    background-color: white;
+
 }
 
 .text_area {

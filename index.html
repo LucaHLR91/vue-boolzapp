@@ -13,7 +13,7 @@
     <!-- FONT AWESOME LINK -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- CSS LINK -->
-    <link rel="stylesheet" href="css/\style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Vue Boolzapp</title>
 </head>
 <body>
@@ -23,7 +23,7 @@
             <section id="navigation_area" class="float_left">
                 <div class="user">
                     <div class="user_name">
-                        <img src="img/avatar_1.jpg" alt="">
+                        <img src="img/avatar_1.jpg" alt="avatar">
                         <span>Luca Mastrantonio</span>
                     </div>
                     <div class="user_menu">
@@ -49,14 +49,15 @@
                 </div>
                 <div class="chat_list">
                     <div class="contact_name" v-for="(contact, index) in contacts">
-                        {{ contact.avatar }}  {{ contact.name }}
+                        <img :src="contact.avatar" alt="avatar">
+                        <span>{{ contact.name }}</span>
                     </div>
                 </div>
             </section>
             <!-- CHAT AREA -->
             <section id="chat_area" class="float_left">
                 <div class="contact">
-
+                    
                 </div>
                 <div class="chat_main">
 
