@@ -13,7 +13,7 @@ const app = new Vue(
             contacts: [
                 {
                     name: 'Michele',
-                    avatar: '_1',
+                    avatar: "img/avatar_2.jpg",
                     visible: true,
                     messages: [
                         {

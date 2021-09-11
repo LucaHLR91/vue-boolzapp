@@ -146,27 +146,41 @@
     border-bottom: 1px solid lightgray;
 }
 
+#chat_area {
+    width: 70%;
+    height: 100%;
+}
+
 .contact {
     width: 100%;
     height: 10%;
     background: greenyellow;
 }
 
-#chat_area {
-    width: 70%;
-    height: 100%;
-    background: blue;
-}
-
-
 .chat_main {
     width: 100%;
     height: 80%;
-    background: lightsalmon;
+    background-image: url(../img/mine.jpg)
 }
 
 .text_area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
     height: 10%;
-    background: lightsteelblue;
+    background: #F3EEEA;
+}
+
+.text_area i {
+    font-size: 25px;
+    color: #6C7D8C;
+    margin: 0 20px;
+}
+
+.text_area input {
+    width: 600px;
+    padding: 10px;
+    border: none;
+    border-radius: 2px;
 }
