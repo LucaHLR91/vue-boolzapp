@@ -69,7 +69,14 @@
                     </div>
                 </div>
                 <div class="chat_main">
-
+                    <div class="chat_container clearfix" v-for="(single_message, index) in contacts[selected_user].messages" >
+                        <div class="message_sent" v-if="single_message.status == 'sent'">
+                            {{ single_message.message }}
+                        </div>
+                        <div class="message_received" v-else>
+                            {{ single_message.message }}
+                        </div>
+                    </div>
                 </div>
                 <div class="text_area">
                     <i class="far fa-smile"></i>
