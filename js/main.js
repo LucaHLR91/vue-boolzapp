@@ -91,10 +91,14 @@ const app = new Vue(
                         }
                     ],
                 },
-            ]
+            ],
+            selected_user: 0,
         },
         methods: {
-            
+            selectedContact(index) {
+               console.log(index);
+               this.selected_user = index;
+            }
         }
     }
 )
