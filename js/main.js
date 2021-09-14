@@ -93,7 +93,8 @@ const app = new Vue(
                 },
             ],
             selected_user: 0,
-            newMessage: '',
+            newUserMessage: '',
+            contactReply: 'Ok',
         },
         methods: {
             selectedContact(index) {
@@ -101,13 +102,23 @@ const app = new Vue(
                this.selected_user = index;
             },
             addMessage() {
-                if (this.newMessage != '') {
+                if (this.newUserMessage != '') {
                     this.contacts[this.selected_user].messages.push({
                         date: dayjs().format('DD/MM//YYYY HH:mm:ss'),
-                        message: this.newMessage,
+                        message: this.newUserMessage,
                         status: 'sent'
                     })
-                }
+                }else {
+                    alert('Attenzione, non hai scritto nulla')
+                };
+                setTimeout( () => {
+                    this.contacts[this.selected_user].messages.push({
+                        date:dayjs().format('DD/MM//YYYY HH:mm:ss'),
+                        message: this.contactReply,
+                        status: 'received'
+                    })
+                }, 1000)
+
             }
         }
     }
