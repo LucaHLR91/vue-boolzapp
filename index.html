@@ -74,9 +74,11 @@
                     <div class="chat_container clearfix" v-for="(single_message, index) in contacts[selected_user].messages" >
                         <div class="message_sent" v-if="single_message.status == 'sent'">
                             {{ single_message.message }}
+                            <span> {{ single_message.date }}</span>
                         </div>
                         <div class="message_received" v-else>
                             {{ single_message.message }}
+                            <span> {{ single_message.date }}</span>
                         </div>
                     </div>
                 </div>

@@ -218,21 +218,38 @@
 }
 
 .message_received {
+    display: flex;
+    flex-direction: column;
     float: left;
     margin: 20px;
     padding: 10px;
-    text-align: center;
+    text-align: start;
     border-radius: 10px;
     background-color: white;
 }
+.message_received span {
+    font-size: 10px;
+    color: #6C7D8C;
+    text-align: end;
+    padding: 2px;
+}
 
 .message_sent {
+    display: flex;
+    flex-direction: column;
     float: right;
     margin: 20px;
     padding: 10px;
-    text-align: center;
+    text-align: start;
     border-radius: 10px;
     background-color: #d2f8b7;
+}
+
+.message_sent span {
+    font-size: 10px;
+    color: #6C7D8C;
+    text-align: end;
+    padding: 2px;
 }
 
 .text_area {

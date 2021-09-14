@@ -113,7 +113,7 @@ const app = new Vue(
                 };
                 setTimeout( () => {
                     this.contacts[this.selected_user].messages.push({
-                        date:dayjs().format('DD/MM//YYYY HH:mm:ss'),
+                        date:dayjs().format('DD/MM/YYYY HH:mm:ss'),
                         message: this.contactReply,
                         status: 'received'
                     })
