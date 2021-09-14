@@ -156,6 +156,10 @@
     border-bottom: 1px solid lightgray;
 }
 
+.contact_active {
+    background-color: #DCDCDC;
+}
+
 .contact_name:hover {
     background-color: #F5F5F5;
     cursor: pointer;
