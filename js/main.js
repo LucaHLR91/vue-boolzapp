@@ -93,14 +93,11 @@ const app = new Vue(
                 },
             ],
             selected_user: 0,
-            messages_array: '',
         },
         methods: {
             selectedContact(index) {
                console.log(index);
                this.selected_user = index;
-               this.messages_array = this.contacts[this.selected_user].messages;
-               console.log(this.messages_array)
             }
         }
     }
