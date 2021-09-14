@@ -50,7 +50,7 @@ const app = new Vue(
                         {
                             date: '20/03/2020 16:35:00',
                             message: 'Mi piacerebbe ma devo andare a fare la spesa.',
-                            status: 'received'
+                            status: 'sent'
                         }
                     ],
                 },
@@ -93,11 +93,21 @@ const app = new Vue(
                 },
             ],
             selected_user: 0,
+            newMessage: '',
         },
         methods: {
             selectedContact(index) {
                console.log(index);
                this.selected_user = index;
+            },
+            addMessage() {
+                if (this.newMessage != '') {
+                    this.contacts[this.selected_user].messages.push({
+                        date: dayjs().format('DD/MM//YYYY HH:mm:ss'),
+                        message: this.newMessage,
+                        status: 'sent'
+                    })
+                }
             }
         }
     }

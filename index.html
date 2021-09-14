@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- VUE IMPORT -->
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <!-- DAYJS IMPORT -->
+    <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
     <!-- FONT LINK -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -80,7 +82,7 @@
                 </div>
                 <div class="text_area">
                     <i class="far fa-smile"></i>
-                    <input type="text" placeholder="Scrivi un messaggio">
+                    <input type="text" placeholder="Scrivi un messaggio" @keyup.enter="addMessage" v-model="newMessage">
                     <i class="fas fa-microphone"></i>
                 </div>
             </section>
