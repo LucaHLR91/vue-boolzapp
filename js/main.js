@@ -108,6 +108,7 @@ const app = new Vue(
                         message: this.newUserMessage,
                         status: 'sent'
                     })
+                    this.newUserMessage = '';
                 }else {
                     alert('Attenzione, non hai scritto nulla')
                 };
