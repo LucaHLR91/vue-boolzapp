@@ -117,7 +117,7 @@ const app = new Vue(
             },
             researchContactName() {
                 for(let i = 0; i < this.contacts.length; i++) {
-                    if(this.contacts[i].name.includes(this.search_contact)) {
+                    if(this.contacts[i].name.toLowerCase().includes(this.search_contact.toLowerCase())) {
                         this.contacts[i].visible = true;
                     }else {
                         this.contacts[i].visible = false;
