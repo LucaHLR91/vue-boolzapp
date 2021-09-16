@@ -71,7 +71,7 @@ const app = new Vue(
                 },
                 {
                     name: 'Luisa',
-                    avatar: 'img/avatar_5.jpg',
+                    avatar: 'img/avatar_6.jpg',
                     visible: true,
                     messages: [{
                         date: '10/01/2020 15:30:55',
